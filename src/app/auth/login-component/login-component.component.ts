@@ -7,7 +7,6 @@ import { authFactory } from './authFactory';
 import { FormsModule } from '@angular/forms';
 import ParticlesConfig from './particles.json';
 import { tsParticles } from "@tsparticles/engine";
-import { IParticlesProps, NgxParticlesModule } from '@tsparticles/angular';
 import { DOCUMENT, isPlatformBrowser, isPlatformServer } from '@angular/common';
 
 
@@ -15,7 +14,7 @@ import { DOCUMENT, isPlatformBrowser, isPlatformServer } from '@angular/common';
 @Component({
   selector: 'app-login-component',
   standalone: true,
-  imports: [FormsModule,NgxParticlesModule],
+  imports: [FormsModule],
   templateUrl: './login-component.component.html',
   styleUrl: './login-component.component.css',
   providers: [
